@@ -43,11 +43,11 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
         align-items: center;
         gap: 12px;
       }
-      .admin-sidebar-modern .brand i { 
-        background: linear-gradient(135deg, #3b82f6, #60a5fa);
-        padding: 10px;
+      .admin-sidebar-modern .brand img { 
+        background: #fff;
         border-radius: 10px;
-        font-size: 1.1rem;
+        height: 40px;
+        object-fit: contain;
       }
       .admin-sidebar-modern .nav { padding: 20px 0; }
       .admin-sidebar-modern .nav-item { margin: 4px 12px; }
@@ -180,7 +180,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
       <!-- Sidebar -->
       <aside class="admin-sidebar-modern" id="adminSidebar">
         <div class="brand">
-          <i class="fa-solid fa-shirt"></i>
+          <img src="../assets/logo/logo.png" alt="Logo" style="height: 32px; border-radius: 8px;">
           <span>SablonKita Admin</span>
         </div>
         <nav class="nav flex-column">

@@ -5,7 +5,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-4 mb-md-0">
-          <h5><i class="fa-solid fa-shirt me-2"></i> Sablon Custom</h5>
+          <div class="d-flex align-items-center mb-3">
+            <img src="assets/logo/logo.png" alt="Sablon Custom Logo" style="height: 35px; margin-right: 10px;">
+            <h5 class="mb-0">Sablon Custom</h5>
+          </div>
           <p class="mb-2">Layanan cetak sablon kaos, jaket, topi, dan merchandise custom berkualitas premium.</p>
           <p class="small mb-0">© <?php echo date('Y'); ?> Sablon Custom. All rights reserved.</p>
         </div>

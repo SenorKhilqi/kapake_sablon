@@ -56,6 +56,15 @@ $orders = $conn->query("SELECT o.*, u.nama FROM orders o JOIN users u ON o.id_us
   .table-modern tbody tr:hover {
     background: #f8fafc;
   }
+  /* Column widths for better layout */
+  .table-modern th:nth-child(1) { min-width: 80px; } /* Order ID */
+  .table-modern th:nth-child(2) { min-width: 150px; } /* Pelanggan */
+  .table-modern th:nth-child(3) { min-width: 130px; } /* Tanggal */
+  .table-modern th:nth-child(4) { min-width: 120px; } /* Total */
+  .table-modern th:nth-child(5) { min-width: 100px; } /* Pembayaran */
+  .table-modern th:nth-child(6) { min-width: 140px; } /* Status */
+  .table-modern th:nth-child(7) { min-width: 340px; } /* Aksi */
+  
   .badge-status {
     padding: 6px 12px;
     border-radius: 6px;
@@ -103,6 +112,65 @@ $orders = $conn->query("SELECT o.*, u.nama FROM orders o JOIN users u ON o.id_us
   .btn-view:hover {
     background: #e2e8f0;
     color: #1e293b;
+  }
+  .action-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+  .action-form .form-select {
+    min-width: 160px;
+    max-width: 180px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .table-container {
+      padding: 16px;
+    }
+    .table-container h5 {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .table-modern {
+      font-size: 0.8rem;
+      min-width: 1000px; /* Allow horizontal scroll on mobile */
+    }
+    .table-modern thead th,
+    .table-modern tbody td {
+      padding: 8px;
+    }
+    .badge-status {
+      padding: 4px 8px;
+      font-size: 0.75rem;
+      gap: 4px;
+    }
+    .form-select-sm {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      min-width: 140px;
+    }
+    .btn-update, .btn-view {
+      padding: 4px 8px;
+      font-size: 0.75rem;
+    }
+    .action-form {
+      gap: 4px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .mb-4 h2 {
+      font-size: 1.5rem;
+    }
+    .mb-4 p {
+      font-size: 0.85rem;
+    }
   }
 </style>
 
@@ -160,18 +228,18 @@ $orders = $conn->query("SELECT o.*, u.nama FROM orders o JOIN users u ON o.id_us
               </span>
             </td>
             <td>
-              <form method="post" class="d-flex align-items-center gap-2">
+              <form method="post" class="action-form">
                 <input type="hidden" name="order_id" value="<?php echo $o['id']; ?>">
-                <select name="status" class="form-select form-select-sm" style="width: 180px;">
+                <select name="status" class="form-select form-select-sm">
                   <option <?php if ($o['status']=='Menunggu Pembayaran') echo 'selected'; ?>>Menunggu Pembayaran</option>
                   <option <?php if ($o['status']=='Sudah Dibayar') echo 'selected'; ?>>Sudah Dibayar</option>
                   <option <?php if ($o['status']=='Selesai') echo 'selected'; ?>>Selesai</option>
                 </select>
-                <button name="status_update" class="btn btn-update btn-sm">
+                <button name="status_update" class="btn btn-update btn-sm" title="Update Status">
                   <i class="fa-solid fa-sync"></i>
                 </button>
-                <a class="btn btn-view btn-sm" href="order_view.php?id=<?php echo $o['id']; ?>">
-                  <i class="fa-solid fa-eye me-1"></i>Lihat
+                <a class="btn btn-view btn-sm" href="order_view.php?id=<?php echo $o['id']; ?>" title="Lihat Detail">
+                  <i class="fa-solid fa-eye"></i>
                 </a>
               </form>
             </td>

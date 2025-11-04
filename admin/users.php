@@ -52,6 +52,46 @@ $users = $conn->query("SELECT id, nama, email, no_wa, role, created_at FROM user
     font-size: 0.85rem;
     font-weight: 600;
   }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .table-container {
+      padding: 16px;
+    }
+    .table-container h5 {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .table-modern {
+      font-size: 0.8rem;
+    }
+    .table-modern thead th,
+    .table-modern tbody td {
+      padding: 8px;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+    .badge-role-admin, .badge-role-user {
+      padding: 4px 8px;
+      font-size: 0.75rem;
+    }
+    .fa-solid, .fa-brands {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .mb-4 h2 {
+      font-size: 1.5rem;
+    }
+    .mb-4 p {
+      font-size: 0.85rem;
+    }
+  }
 </style>
 
 <div class="mb-4">

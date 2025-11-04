@@ -24,7 +24,7 @@ require_once __DIR__ . '/functions.php';
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.php">
-        <i class="fa-solid fa-shirt me-2"></i>
+        <img src="assets/logo/logo.png" alt="Sablon Custom Logo" style="height: 40px; margin-right: 10px;">
         <span>Sablon Custom</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">

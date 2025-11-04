@@ -130,6 +130,47 @@ $res = $conn->query("SELECT * FROM products ORDER BY id DESC");
     background: linear-gradient(135deg, #059669, #10b981);
     color: #fff;
   }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .form-card, .table-container {
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .form-card h5, .table-container h5 {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .table-modern {
+      font-size: 0.8rem;
+      min-width: 600px;
+    }
+    .table-modern thead th,
+    .table-modern tbody td {
+      padding: 8px;
+      white-space: nowrap;
+    }
+    .btn-edit, .btn-delete, .btn-save-price {
+      padding: 4px 8px;
+      font-size: 0.75rem;
+    }
+    .btn-edit i, .btn-delete i {
+      margin-right: 4px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .mb-4 h2 {
+      font-size: 1.5rem;
+    }
+    .mb-4 p {
+      font-size: 0.85rem;
+    }
+  }
 </style>
 
 <div class="mb-4">
