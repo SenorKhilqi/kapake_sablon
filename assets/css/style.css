@@ -1,0 +1,305 @@
+/*
+  assets/css/style.css
+  Modern E-Commerce Sablon UI + Admin Panel
+  - Public: Poppins font, blue accent (#1E40AF), clean card hover effects
+  - Admin: Inter font, soft blue palette, structured layout
+*/
+
+:root{
+  /* Public Palette */
+  --primary: #1E40AF;      /* blue-800 CTA */
+  --primary-light: #3B82F6;
+  --secondary: #64748b;    /* slate-500 */
+  --bg-main: #ffffff;
+  --bg-light: #f1f5f9;     /* slate-100 */
+  --text: #1e293b;         /* slate-800 */
+  --text-muted: #64748b;
+  --shadow: 0 4px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 8px 20px rgba(30,64,175,0.15);
+  
+  /* Admin Palette */
+  --brand: #3b82f6;
+  --brand-600: #2563eb;
+  --accent: #60a5fa;
+  --muted: #6b7280;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --soft-border: #e6eefc;
+  --danger: #ef4444;
+  --success: #10b981;
+  --pay: #2563eb;
+  --radius: 12px;
+}
+
+/* Base / Typography */
+html, body { height: 100%; scroll-behavior: smooth; }
+body{
+  margin:0;
+  padding:0;
+  background: var(--bg-main);
+  font-family: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ==========================
+   PUBLIC UI STYLES
+   ========================== */
+
+/* Navbar */
+.navbar{ background: #ffffff !important; box-shadow: var(--shadow); transition: all 0.3s ease; }
+.navbar-brand{ font-weight:700; font-size:1.35rem; color: var(--primary) !important; }
+.navbar .nav-link{ color: var(--text); font-weight:500; padding: 0.5rem 1rem !important; transition: color 0.3s ease; }
+.navbar .nav-link:hover{ color: var(--primary) !important; }
+.navbar .btn-cta{ background: var(--primary); color: #fff; padding: 0.5rem 1.5rem; border-radius: 8px; font-weight:600; transition: all 0.3s ease; }
+.navbar .btn-cta:hover{ background: #1e3a8a; transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+
+/* Hero Section */
+.hero-section{ 
+  background: linear-gradient(135deg, rgba(30,64,175,0.95), rgba(59,130,246,0.85)), url('/sablon/assets/model/hero.jpg') center/cover no-repeat;
+  min-height: 500px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: #fff;
+  text-align:center;
+  padding: 80px 20px;
+}
+.hero-section h1{ font-size: 3rem; font-weight:700; margin-bottom:1rem; text-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+.hero-section p{ font-size:1.25rem; margin-bottom:2rem; opacity:0.95; }
+.hero-section .btn-hero{ background: #fff; color: var(--primary); padding: 0.75rem 2.5rem; font-size:1.1rem; font-weight:600; border-radius:10px; transition: all 0.3s ease; }
+.hero-section .btn-hero:hover{ transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.2); }
+
+/* Section Padding */
+.section-padding{ padding: 60px 0; }
+.section-title{ font-size:2.25rem; font-weight:700; margin-bottom:1rem; color: var(--text); text-align:center; }
+.section-subtitle{ font-size:1.1rem; color: var(--text-muted); text-align:center; margin-bottom:3rem; }
+
+/* Feature Cards */
+.feature-card{ 
+  background: #fff; 
+  padding: 2rem; 
+  border-radius: 12px; 
+  box-shadow: var(--shadow); 
+  text-align:center; 
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+.feature-card:hover{ transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+.feature-card .icon{ font-size:3rem; color: var(--primary); margin-bottom:1rem; }
+.feature-card h4{ font-weight:600; margin-bottom:0.75rem; color: var(--text); }
+.feature-card p{ color: var(--text-muted); font-size:0.95rem; margin:0; }
+
+/* Product Card */
+.product-card{ 
+  background: #fff; 
+  border-radius: 12px; 
+  overflow:hidden; 
+  box-shadow: var(--shadow); 
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  height:100%;
+}
+.product-card:hover{ transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.product-card .img-wrapper{ 
+  position:relative; 
+  overflow:hidden; 
+  height:220px;
+  background: var(--bg-light);
+}
+.product-card .img-wrapper img{ 
+  width:100%; 
+  height:100%; 
+  object-fit:cover; 
+  transition: transform 0.4s ease;
+}
+.product-card:hover .img-wrapper img{ transform: scale(1.08); }
+.product-card .card-body{ padding:1.25rem; }
+.product-card .product-name{ font-weight:600; font-size:1.05rem; color: var(--text); margin-bottom:0.5rem; }
+.product-card .product-category{ font-size:0.85rem; color: var(--text-muted); margin-bottom:0.75rem; }
+.product-card .product-price{ font-size:1.25rem; font-weight:700; color: var(--primary); margin-bottom:1rem; }
+.product-card .btn-order{ 
+  width:100%; 
+  background: var(--primary); 
+  color: #fff; 
+  padding:0.65rem; 
+  border-radius:8px; 
+  font-weight:600; 
+  transition: all 0.3s ease;
+  border:0;
+}
+.product-card .btn-order:hover{ background: #1e3a8a; }
+
+/* Testimonial Card */
+.testimonial-card{ 
+  background: #fff; 
+  padding: 1.75rem; 
+  border-radius: 12px; 
+  box-shadow: var(--shadow); 
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+.testimonial-card:hover{ transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.testimonial-card .avatar{ width:60px; height:60px; border-radius:50%; object-fit:cover; margin-bottom:1rem; border: 3px solid var(--primary-light); }
+.testimonial-card .name{ font-weight:600; font-size:1.05rem; color: var(--text); margin-bottom:0.25rem; }
+.testimonial-card .role{ font-size:0.85rem; color: var(--text-muted); margin-bottom:1rem; }
+.testimonial-card .quote{ font-style:italic; color: var(--text); font-size:0.95rem; line-height:1.6; }
+
+/* Footer */
+footer{ 
+  background: var(--text); 
+  color: #cbd5e1; 
+  padding: 40px 0 20px;
+  margin-top:60px;
+}
+footer h5{ color: #fff; font-weight:600; margin-bottom:1rem; }
+footer a{ color: #cbd5e1; text-decoration:none; transition: color 0.3s ease; }
+footer a:hover{ color: #fff; }
+footer .social-icon{ font-size:1.5rem; margin-right:1rem; }
+
+/* ==========================
+   ADMIN STYLES (unchanged)
+   ========================== */
+.container{ max-width:1140px; margin: 0 auto; padding: 0 16px; }
+.section { margin-bottom: 28px; }
+.soft-section { padding: 18px; background: linear-gradient(180deg, rgba(59,130,246,0.03), rgba(96,165,250,0.01)); border-radius: var(--radius); }
+.topbar { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 0; }
+.topbar .search { max-width:420px; width:100%; }
+.topbar .search input { border-radius:8px; border:1px solid var(--soft-border); padding:8px 12px; width:100%; }
+
+
+/* ==========================
+   Admin Header (bright primary)
+   ========================== */
+.admin-header{ background: linear-gradient(90deg, var(--brand), var(--brand-600)); box-shadow: 0 8px 30px rgba(37,99,235,0.12); }
+.admin-header .navbar-brand, .admin-header .nav-link{ color: #ffffff !important; }
+.admin-header .nav-link{ opacity:0.95; }
+.admin-header .nav-link:hover{ background: rgba(255,255,255,0.06); border-radius:8px; }
+.admin-header .badge{ background: rgba(255,255,255,0.12); color: #fff; font-weight:700; }
+.admin-header .navbar-toggler{ border-color: rgba(255,255,255,0.12); }
+.admin-header .navbar-toggler-icon{ filter: invert(1) brightness(2); }
+
+/* ==========================
+	Admin Layout (Sidebar + Content)
+	========================== */
+.admin-layout { display:grid; grid-template-columns: 260px 1fr; gap:24px; align-items:start; }
+.admin-sidebar{ background:var(--card); padding:18px; border-radius:12px; box-shadow:0 8px 24px rgba(15,23,42,0.06); height:fit-content; }
+.admin-sidebar .nav { display:flex; flex-direction:column; gap:6px; }
+.admin-sidebar .nav a{ padding:10px 12px; border-radius:8px; color:rgba(15,23,42,0.8); display:flex; align-items:center; gap:10px; text-decoration:none; }
+.admin-sidebar .nav a.active, .admin-sidebar .nav a:hover{ background: linear-gradient(90deg, rgba(59,130,246,0.06), rgba(96,165,250,0.02)); color:var(--brand-600); box-shadow: inset 0 0 0 1px rgba(37,99,235,0.04); }
+
+.admin-content { min-height:400px; }
+
+/* Small top summary boxes in dashboard */
+.admin-summary { display:flex; gap:16px; flex-wrap:wrap; }
+.admin-summary .summary-card{ flex:1 1 220px; background:var(--card); padding:14px; border-radius:10px; box-shadow:0 6px 20px rgba(15,23,42,0.05); }
+.summary-card h4{ margin:0 0 6px 0; font-size:0.95rem; color:var(--muted); }
+.summary-card .value{ font-size:1.25rem; font-weight:700; color:var(--brand-600); }
+
+/* ==========================
+	Admin Cards (Products, Orders)
+	========================== */
+.admin-card{ background:var(--card); border-radius:12px; padding:16px; box-shadow:0 8px 24px rgba(15,23,42,0.04); border:1px solid rgba(15,23,42,0.02); }
+.admin-card .card-title{ font-weight:700; margin-bottom:8px; }
+.admin-card .card-meta{ color:var(--muted); font-size:0.9rem; }
+
+.product-card-admin{ display:flex; gap:12px; align-items:center; }
+.product-card-admin img{ width:88px; height:88px; object-fit:cover; border-radius:8px; flex-shrink:0; }
+.product-card-admin .meta{ flex:1; }
+
+/* Card hover */
+.admin-card, .summary-card{ transition: transform .18s ease, box-shadow .18s ease; }
+.admin-card:hover, .summary-card:hover{ transform: translateY(-4px); box-shadow:0 16px 36px rgba(15,23,42,0.08); }
+
+/* ==========================
+	Admin Tables
+	========================== */
+.admin-table{ width:100%; border-collapse:collapse; }
+.admin-table thead th{ background:#f1f5f9; color: #0f172a; font-weight:700; padding:12px 10px; text-align:left; border-bottom:1px solid rgba(15,23,42,0.04); }
+.admin-table tbody td{ padding:12px 10px; border-bottom:1px solid rgba(15,23,42,0.04); vertical-align:middle; }
+.admin-table tbody tr:hover{ background: linear-gradient(90deg, rgba(59,130,246,0.02), transparent); }
+.table-actions { display:flex; gap:8px; align-items:center; }
+
+/* Badge */
+.badge-soft{ background: rgba(37,99,235,0.08); color:var(--brand-600); padding:6px 10px; border-radius:999px; font-weight:600; }
+
+/* ==========================
+	Forms
+	========================== */
+form .form-label{ font-weight:600; margin-bottom:6px; display:block; }
+.form-control, .form-select, textarea{ border-radius:10px; border:1px solid var(--soft-border); padding:10px 12px; background: #fff; }
+.form-control:focus, .form-select:focus, textarea:focus{ outline:none; box-shadow:0 6px 20px rgba(37,99,235,0.06); border-color:var(--brand-600); }
+
+/* File/image preview */
+.img-preview{ max-width:220px; max-height:160px; object-fit:cover; border-radius:8px; border:1px solid #eef2ff; }
+
+/* ==========================
+	Buttons
+	========================== */
+.btn{ border-radius:10px; padding:8px 14px; font-weight:600; transition: transform .14s ease, box-shadow .14s ease; }
+.btn:hover{ transform: translateY(-2px); }
+
+.btn-primary{ background: linear-gradient(180deg,var(--brand),var(--brand-600)); color:#fff; border:0; box-shadow:0 8px 20px rgba(37,99,235,0.08); }
+.btn-outline-soft{ background:transparent; color:var(--brand-600); border:1px solid rgba(37,99,235,0.12); }
+.btn-sm{ padding:.35rem .6rem; font-size:0.9rem; }
+
+/* Standout actions: payment and confirm */
+.btn-pay{ background: linear-gradient(180deg,var(--pay), #1d4ed8); color:#fff; border:0; box-shadow:0 10px 30px rgba(37,99,235,0.12); }
+.btn-confirm{ background: linear-gradient(180deg,var(--success), #059669); color:#fff; border:0; box-shadow:0 10px 30px rgba(6,182,212,0.08); }
+.btn-danger{ background: linear-gradient(180deg,var(--danger), #dc2626); color:#fff; border:0; }
+
+.btn-icon{ display:inline-flex; align-items:center; gap:8px; }
+
+/* Shortcuts */
+.btn-edit{ background: linear-gradient(180deg,#f59e0b,#d97706); color:#fff; border:0; }
+.btn-delete{ background: linear-gradient(180deg,#ef4444,#dc2626); color:#fff; border:0; }
+
+/* ==========================
+	Layout Utilities
+	========================== */
+.flex-row{ display:flex; gap:12px; align-items:center; }
+.stack{ display:flex; flex-direction:column; gap:12px; }
+.text-muted{ color:var(--muted); }
+
+/* ==========================
+	Footer
+	========================== */
+footer{ padding:18px 0; color:var(--muted); }
+
+/* ==========================
+	Responsive rules
+	========================== */
+@media (max-width: 991px){
+  .admin-layout{ grid-template-columns: 220px 1fr; gap:16px; }
+  .hero-section h1{ font-size:2.25rem; }
+}
+
+@media (max-width: 767px){
+  .admin-layout{ display:block; }
+  .admin-sidebar{ display:flex; gap:8px; padding:12px; overflow-x:auto; }
+  .admin-sidebar .nav{ flex-direction:row; }
+  .admin-summary{ flex-direction:column; }
+  .product-card-admin img{ width:72px; height:72px; }
+  .container{ padding:0 12px; }
+  .hero-section{ min-height:400px; padding:60px 20px; }
+  .hero-section h1{ font-size:1.75rem; }
+  .hero-section p{ font-size:1rem; }
+  .section-title{ font-size:1.75rem; }
+}
+
+/* Small helpers */
+.muted-small{ font-size:0.9rem; color:var(--muted); }
+.mb-8{ margin-bottom:8px; }
+.mb-16{ margin-bottom:16px; }
+.mt-12{ margin-top:12px; }
+
+/* Utility */
+.text-primary{ color: var(--primary) !important; }
+.bg-light-section{ background: var(--bg-light); }
+
+/* End of stylesheet */
+
+
