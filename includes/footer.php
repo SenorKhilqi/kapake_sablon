@@ -6,17 +6,17 @@
       <div class="row">
         <div class="col-md-4 mb-4 mb-md-0">
           <div class="d-flex align-items-center mb-3">
-            <img src="assets/logo/logo.png" alt="Sablon Custom Logo" style="height: 35px; margin-right: 10px;">
-            <h5 class="mb-0">Sablon Custom</h5>
+            <img src="assets/logo/logo.png" alt="Kapake Workshop Logo" style="height: 35px; margin-right: 10px;">
+            <h5 class="mb-0">Kapake Workshop</h5>
           </div>
           <p class="mb-2">Layanan cetak sablon kaos, jaket, topi, dan merchandise custom berkualitas premium.</p>
-          <p class="small mb-0">© <?php echo date('Y'); ?> Sablon Custom. All rights reserved.</p>
+          <p class="small mb-0">© <?php echo date('Y'); ?> Kapake Workshop. All rights reserved.</p>
         </div>
         <div class="col-md-4 mb-4 mb-md-0">
           <h5>Kontak Kami</h5>
           <p class="mb-2">
             <i class="fa-brands fa-whatsapp me-2"></i>
-            <a href="https://wa.me/628986709016" target="_blank">0898-6709-016</a>
+            <a href="https://wa.me/6281323100108" target="_blank">0813-2310-0108</a>
           </p>
           <p class="mb-2">
             <i class="fa-brands fa-instagram me-2"></i>

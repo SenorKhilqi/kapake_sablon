@@ -12,7 +12,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Panel - SablonKita</title>
+    <title>Admin Panel - Kapake Workshop</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -36,15 +36,14 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
       }
       .admin-sidebar-modern .brand { 
         padding: 24px 20px; 
-        font-size: 1.35rem; 
+        font-size: 1rem; 
         font-weight: 700; 
         border-bottom: 1px solid rgba(255,255,255,0.1);
         display: flex;
         align-items: center;
         gap: 12px;
       }
-      .admin-sidebar-modern .brand img { 
-        background: #fff;
+      .admin-sidebar-modern .brand img {
         border-radius: 10px;
         height: 40px;
         object-fit: contain;
@@ -181,7 +180,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
       <aside class="admin-sidebar-modern" id="adminSidebar">
         <div class="brand">
           <img src="../assets/logo/logo.png" alt="Logo" style="height: 32px; border-radius: 8px;">
-          <span>SablonKita Admin</span>
+          <span>Kapake Workshop Admin</span>
         </div>
         <nav class="nav flex-column">
           <div class="nav-item">
@@ -235,7 +234,7 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
             <button class="mobile-toggle" onclick="document.getElementById('adminSidebar').classList.toggle('show')">
               <i class="fa-solid fa-bars"></i>
             </button>
-            <h1>Dashboard Admin — SablonKita</h1>
+            <h1>Dashboard Admin — Kapake Workshop</h1>
           </div>
           <div class="admin-user">
             <i class="fa-solid fa-user-shield"></i>

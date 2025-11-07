@@ -18,4 +18,4 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 // assets/js/app.js
-console.log('Sablon Custom loaded');
+console.log('Kapake Workshop loaded');

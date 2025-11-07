@@ -17,7 +17,7 @@ $total = calculate_cart_total($items);
 $error = '';
 $success = false;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $metode = $_POST['metode'] ?? 'BCA';
+    $metode = $_POST['metode'] ?? 'Transfer Bank';
     // create order
     $stmt = $conn->prepare("INSERT INTO orders (id_user, total_harga, metode_pembayaran, status) VALUES (?, ?, ?, 'Menunggu Pembayaran')");
     $stmt->bind_param('ids', $user_id, $total, $metode);
@@ -40,21 +40,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Determine payment method text
         $payment_text = '';
         switch ($metode) {
-            case 'BCA':
-                $payment_text = "🏦 Pembayaran melalui *Transfer BCA*\n📌 No. Rek: *0542167104*";
+            case 'Transfer Bank':
+                $payment_text = "🏦 Pembayaran melalui *Transfer Bank*\n\n";
+                $payment_text .= "Pilih salah satu rekening berikut:\n";
+                $payment_text .= "📌 BCA: *0542167104*\n";
+                $payment_text .= "📌 BNI: *9000042757501*\n";
+                $payment_text .= "📌 BRI: *010001017918531*";
                 break;
-            case 'BNI':
-                $payment_text = "🏦 Pembayaran melalui *Transfer BNI*\n📌 No. Rek: *9000042757501*";
-                break;
-            case 'BRI':
-                $payment_text = "🏦 Pembayaran melalui *Transfer BRI*\n📌 No. Rek: *010001017918531*";
+            case 'QRIS':
+                $payment_text = "📱 Pembayaran melalui *QRIS*\n";
+                $payment_text .= "📌 Scan QRIS yang akan dikirimkan oleh admin";
                 break;
             default:
                 $payment_text = "🏦 Pembayaran melalui *Transfer Bank*";
                 break;
         }
         
-        $message = "Assalamualaikum, Halo Admin Sablon Custom! 👋\n\n";
+        $message = "Assalamualaikum, Halo Admin Kapake Workshop! 👋\n\n";
         $message .= "Saya *{$user_name}* ingin konfirmasi pesanan:\n\n";
         $message .= "📋 *ID Pesanan: #{$order_id}*\n";
         $message .= "━━━━━━━━━━━━━━━━\n\n";
@@ -130,10 +132,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="mb-4">
               <label class="form-label fw-bold">Pilih Metode Pembayaran</label>
               <select name="metode" class="form-select form-select-lg" required>
-                <option value="">-- Pilih Bank --</option>
-                <option value="BCA">🏦 Transfer BCA</option>
-                <option value="BNI">🏦 Transfer BNI</option>
-                <option value="BRI">🏦 Transfer BRI</option>
+                <option value="">-- Pilih Metode Pembayaran --</option>
+                <option value="Transfer Bank">🏦 Transfer Bank (BCA / BNI / BRI)</option>
+                <option value="QRIS">📱 QRIS</option>
               </select>
             </div>
 

@@ -8,7 +8,7 @@ require_once __DIR__ . '/functions.php';
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sablon Custom - Cetak Kaos & Merchandise</title>
+    <title>Kapake Workshop - Cetak Kaos & Merchandise</title>
     <!-- Google Font: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 -->
@@ -24,8 +24,8 @@ require_once __DIR__ . '/functions.php';
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.php">
-        <img src="assets/logo/logo.png" alt="Sablon Custom Logo" style="height: 40px; margin-right: 10px;">
-        <span>Sablon Custom</span>
+        <img src="assets/logo/logo.png" alt="Kapake Workshop Logo" style="height: 40px; margin-right: 10px;">
+        <span>Kapake Workshop</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
         <span class="navbar-toggler-icon"></span>

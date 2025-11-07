@@ -9,7 +9,7 @@ define('DB_PASS', '');
 define('DB_NAME', 'sablon_custom');
 
 // Admin WhatsApp number (used for checkout redirect)
-define('ADMIN_WA', '628986709016'); // change to admin number in international format without +
+define('ADMIN_WA', '6281323100108'); // change to admin number in international format without +
 
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if ($conn->connect_error) {

@@ -11,7 +11,7 @@ $featured_products = array_slice($products, 0, 8);
 <!-- Hero Section -->
 <section class="hero-section" data-aos="fade-in">
   <div class="container">
-    <h1 data-aos="fade-down">Cetak Sablon Custom Berkualitas Premium</h1>
+    <h1 data-aos="fade-down">Cetak Sablon Berkualitas Premium</h1>
     <p data-aos="fade-up" data-aos-delay="100">Desain kaos, jaket, topi, dan merchandise sesuai keinginan Anda.<br>Proses cepat, hasil memuaskan, harga terjangkau.</p>
     <a href="products.php" class="btn btn-hero" data-aos="zoom-in" data-aos-delay="200">
       <i class="fa-solid fa-arrow-right me-2"></i> Lihat Produk
@@ -23,7 +23,7 @@ $featured_products = array_slice($products, 0, 8);
 <section class="section-padding">
   <div class="container">
     <h2 class="section-title" data-aos="fade-up">Mengapa Pilih Kami?</h2>
-    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Kami memberikan pelayanan terbaik untuk kebutuhan sablon custom Anda</p>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Kami memberikan pelayanan terbaik untuk kebutuhan sablon Anda</p>
     
     <div class="row g-4">
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
@@ -108,7 +108,7 @@ $featured_products = array_slice($products, 0, 8);
           <img src="assets/model/testi2.jpg" alt="Customer 2" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Siti+N&background=1E40AF&color=fff&size=120'">
           <h5 class="name">Siti Nurhaliza</h5>
           <p class="role">Event Organizer</p>
-          <p class="quote">"Pelayanan cepat dan responsif! Admin sangat membantu dari desain sampai pengiriman. Recommended banget buat yang butuh sablon custom."</p>
+          <p class="quote">"Pelayanan cepat dan responsif! Admin sangat membantu dari desain sampai pengiriman. Recommended banget buat yang butuh sablon."</p>
         </div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
@@ -128,7 +128,7 @@ $featured_products = array_slice($products, 0, 8);
   <div class="container text-center" data-aos="zoom-in">
     <h2 class="mb-3">Siap Mulai Pesanan Custom Anda?</h2>
     <p class="text-muted mb-4">Hubungi kami sekarang dan wujudkan desain impian Anda!</p>
-    <a href="https://wa.me/628986709016" target="_blank" class="btn btn-primary btn-lg px-5 me-3">
+    <a href="https://wa.me/6281323100108" target="_blank" class="btn btn-primary btn-lg px-5 me-3">
       <i class="fa-brands fa-whatsapp me-2"></i>Chat WhatsApp
     </a>
     <a href="products.php" class="btn btn-outline-primary btn-lg px-5">

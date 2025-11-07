@@ -11,7 +11,7 @@ require_once __DIR__ . '/includes/header.php';
         <i class="fa-solid fa-building me-3"></i>Tentang Kami
       </h1>
       <p class="lead mb-0" data-aos="fade-up" data-aos-delay="100">
-        Mitra Terpercaya Untuk Kebutuhan Sablon Custom Anda
+        Mitra Terpercaya Untuk Kebutuhan Sablon Anda
       </p>
     </div>
   </section>
@@ -21,17 +21,17 @@ require_once __DIR__ . '/includes/header.php';
     <div class="row g-5 align-items-center mb-5">
       <div class="col-lg-6" data-aos="fade-right">
         <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=600&fit=crop" 
-             alt="Sablon Custom Workshop" 
+             alt="Kapake Workshop" 
              class="img-fluid rounded shadow-lg" 
              style="object-fit: cover; width: 100%; height: 400px;">
       </div>
       <div class="col-lg-6" data-aos="fade-left">
         <h2 class="mb-4">
           <i class="fa-solid fa-shirt me-2 text-primary"></i>
-          Sablon Custom - Wujudkan Desain Impianmu
+          Kapake Workshop - Wujudkan Desain Impianmu
         </h2>
         <p class="text-muted mb-3">
-          <strong>Sablon Custom</strong> adalah layanan sablon profesional yang berkomitmen untuk menghadirkan produk berkualitas tinggi dengan desain custom sesuai keinginan Anda. Kami melayani berbagai kebutuhan sablon untuk kaos, jaket, topi, dan merchandise lainnya.
+          <strong>Kapake Workshop</strong> adalah layanan sablon profesional yang berkomitmen untuk menghadirkan produk berkualitas tinggi dengan desain sesuai keinginan Anda. Kami melayani berbagai kebutuhan sablon untuk kaos, jaket, topi, dan merchandise lainnya.
         </p>
         <p class="text-muted mb-4">
           Dengan pengalaman lebih dari <strong>5 tahun</strong> di industri percetakan dan sablon, kami telah melayani ribuan pelanggan dari berbagai kalangan, mulai dari individu, komunitas, hingga perusahaan besar.
@@ -76,7 +76,7 @@ require_once __DIR__ . '/includes/header.php';
             <h4 class="mb-0">Visi Kami</h4>
           </div>
           <p class="text-muted mb-0">
-            Menjadi penyedia layanan sablon custom terdepan di Indonesia yang dikenal dengan kualitas premium, inovasi desain, dan pelayanan terbaik bagi setiap pelanggan.
+            Menjadi penyedia layanan sablon terdepan di Indonesia yang dikenal dengan kualitas premium, inovasi desain, dan pelayanan terbaik bagi setiap pelanggan.
           </p>
         </div>
       </div>
@@ -254,9 +254,9 @@ require_once __DIR__ . '/includes/header.php';
         <i class="fa-solid fa-phone me-2"></i>
         Siap Mewujudkan Desain Anda?
       </h3>
-      <p class="text-white mb-4">Hubungi kami sekarang dan konsultasikan kebutuhan sablon custom Anda!</p>
+      <p class="text-white mb-4">Hubungi kami sekarang dan konsultasikan kebutuhan sablon Anda!</p>
       <div class="d-flex gap-3 justify-content-center flex-wrap">
-        <a href="https://wa.me/628986709016" target="_blank" class="btn btn-light btn-lg px-5">
+        <a href="https://wa.me/6281323100108" target="_blank" class="btn btn-light btn-lg px-5">
           <i class="fa-brands fa-whatsapp me-2"></i>Hubungi WhatsApp
         </a>
         <a href="products.php" class="btn btn-outline-light btn-lg px-5">
