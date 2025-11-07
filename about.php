@@ -34,12 +34,12 @@ require_once __DIR__ . '/includes/header.php';
           <strong>Kapake Workshop</strong> adalah layanan sablon profesional yang berkomitmen untuk menghadirkan produk berkualitas tinggi dengan desain sesuai keinginan Anda. Kami melayani berbagai kebutuhan sablon untuk kaos, jaket, topi, dan merchandise lainnya.
         </p>
         <p class="text-muted mb-4">
-          Dengan pengalaman lebih dari <strong>5 tahun</strong> di industri percetakan dan sablon, kami telah melayani ribuan pelanggan dari berbagai kalangan, mulai dari individu, komunitas, hingga perusahaan besar.
+          Dengan pengalaman lebih dari <strong>20 tahun</strong> di industri percetakan dan sablon, kami telah melayani ribuan pelanggan dari berbagai kalangan, mulai dari individu, komunitas, hingga perusahaan besar.
         </p>
         <div class="row g-3">
           <div class="col-6">
             <div class="p-3 bg-light rounded text-center">
-              <h3 class="text-primary mb-1">5+</h3>
+              <h3 class="text-primary mb-1">20+</h3>
               <p class="small text-muted mb-0">Tahun Pengalaman</p>
             </div>
           </div>
